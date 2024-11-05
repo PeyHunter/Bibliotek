@@ -1,12 +1,21 @@
 public class Bibliotek {
 
-    private String   BibliotekNavn;
+    private String   bibliotekNavn;
     private String   kommune;
     private String   adresse;
     private String   telefonNr;
 
+    public Bibliotek() {}
+
+    public Bibliotek(String bibNavn, String kom, String adr, String telNr) {
+        bibliotekNavn = bibNavn;
+        kommune = kom;
+        adresse = adr;
+        telefonNr = telNr;
+    }
+
     public String getBibliotekNavn() {
-        return BibliotekNavn;
+        return bibliotekNavn;
     }
 
     public String getKommune() {
@@ -16,8 +25,7 @@ public class Bibliotek {
     public String getAdresse() {
         return adresse;
     }
-    public int getTelefonNr() {
-    return telefonNr;
+    public String getTelefonNr() {
+        return telefonNr;
     }
-
 }

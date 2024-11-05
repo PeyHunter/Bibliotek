@@ -5,12 +5,20 @@ public class Bog {
     private int         antal = 0;
     private int         aarstal;
 
+
     public Bog () {}
+
+    public Bog(String titel, String genre, int antal, int aarstal) {
+        this.titel = titel;
+        this.genre = genre;
+        this.antal = antal;
+        this.aarstal = aarstal;
+    }
 
 
     public String getTitel()
     {
-        return getTitel();
+        return titel;
     }
 
     public String getGenre()
