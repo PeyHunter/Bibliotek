@@ -1,3 +1,5 @@
+import java.time.format.DateTimeFormatter;
+
 public class Bibliotek {
 
     private String   bibliotekNavn;
@@ -28,4 +30,16 @@ public class Bibliotek {
     public String getTelefonNr() {
         return telefonNr;
     }
+
+    @Override
+    public String toString() {
+
+        return "Bibliotek\n" +
+                " - Navn: " + bibliotekNavn + "\n" +
+                " - Kommune: " + kommune + "\n" +
+                " - Adresse: " + adresse + "\n" +
+                " - Telefon: " + telefonNr + "\n";
+
+    }
 }
+
