@@ -4,26 +4,28 @@ public class Bog {
 
     private String      titel;
     private String      genre;
-    private int         antal = 0;
+    private int         antalEksemplar;
     private int         aarstal;
-    private Forfatter forfatter;
+    private Forfatter   forfatter;
 
+    public ArrayList<Bog> bogList= new ArrayList<>();
 
     public Bog () {}
 
-    public Bog(String titel, String genre, int antal, int aarstal, Forfatter ffatter) {
+    public Bog(String titel, String genre, int antEks, int aarstal, Forfatter ffatter) {
         this.titel = titel;
         this.genre = genre;
-        this.antal = antal;
+        this.antalEksemplar = antEks;
         this.aarstal = aarstal;
         this.forfatter = ffatter;
     }
 
-    public ArrayList<Bog> bogList= new ArrayList<>();
+
+
 
     public void addBookToAuthor(){
 
-        Forfatter fitzgerald = new Forfatter("F. Scott Fitzgerald", "Scribner", "American", 1896, 1940);
+        Forfatter fitzgerald = new Forfatter("F. Scott Fitzgerald", "Scribner", "American", 1, 1940);
         Forfatter lee = new Forfatter("Harper Lee", "J.B. Lippincott & Co.", "American", 1926, 2016);
         Forfatter orwell = new Forfatter("George Orwell", "Secker & Warburg", "British", 1903, 1950);
         Forfatter austen = new Forfatter("Jane Austen", "T. Egerton", "British", 1775, 1817);
@@ -65,7 +67,7 @@ public class Bog {
 
     public int getAntal()
     {
-        return antal;
+        return antalEksemplar;
     }
 
     public int getAarstal()
@@ -79,7 +81,7 @@ public class Bog {
         return"Bog: \n" +
                 " - Titel: " + titel + "\n"  +
                 " - Genre: " + genre +"\n" +
-                " - Antal: " + antal + "\n" +
+                " - Antal Eksemplar: " + antalEksemplar + "\n" +
                 " - Aarstal: " + aarstal + "\n \n" +
                 " Forfatter: \n " + forfatter + "\n";
 

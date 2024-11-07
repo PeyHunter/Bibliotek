@@ -1,29 +1,44 @@
 import java.util.ArrayList;
+import java.time.format.DateTimeFormatter;
+import java.time.LocalDate;
 
 public class Udlaan {
 
-    private int     dato;
-    private int     laanerID;
-    private int     eksemplarId;
-    private int     udlaantEksemplar;
+    DateTimeFormatter   dateFormatter = DateTimeFormatter.ofPattern("dd-MM-yy");
 
+    private Laaner      laanerID;
+    private int         eksemplarId;
+    private int         udlaantEksemplar;
+    private LocalDate   dato;
 
     public Udlaan() {}
 
-    public ArrayList <Laaner> udlaanArray = new ArrayList<>();
+    public ArrayList<Udlaan> udlaansListe = new ArrayList<>();
 
-    public Udlaan(int dat, int lID, int eksId, int udEks) {
-        this.dato = dat;
-        this.laanerID = lID;
+    public Udlaan(LocalDate dato, Laaner laanerID, int eksId, int udEks) {
+        this.dato = dato;
+        this.laanerID = laanerID;
         this.eksemplarId = eksId;
         this.udlaantEksemplar = udEks;
     }
 
-    public int getAntalUdlaan(){
-        return dato;
-    }
 
-    public int getMaxUdlaan(){
+
+    // add to array - if (laanerID == laaner) udlaansListe++
+    // udlaantEksemplar--
+
+
+//    public void createUdlaan(){
+//        udlaansListe.add();
+//
+//    }
+
+
+//    public int getAntalUdlaan(){
+//        return ;
+//    }
+
+    public Laaner getLaanerID() {
         return laanerID;
     }
 
@@ -34,4 +49,21 @@ public class Udlaan {
     public int getUdlaantEksemplar(){
         return udlaantEksemplar;
     }
+
+    public LocalDate getDato() {
+        return dato;
+    }
+
+    @Override
+    public String toString() {
+        return"Udlaan: \n" +
+                "Dato: " + dato.format(dateFormatter) + "\n" +
+                "Laaner: " + laanerID +"\n" +
+                "Eksemplar" + eksemplarId + "\n" +
+                "Udlaant Eksemplar: " + udlaantEksemplar + "\n";
+
+    }
+
+
+
 }

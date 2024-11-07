@@ -1,25 +1,17 @@
 public class Eksemplar
 {
 
-    private int     udgivelsesAar;
-    private int     antalEksemplar = 0;
-    private int     stregkode = 13;
+    private int antalEksemplar;
+    private int stregkode;
 
+    public Eksemplar() {
+    }
 
-    public Eksemplar() {}
-
-
-    public Eksemplar(int UdAar, int AnEks, int streg)
-    {
-        this.udgivelsesAar = UdAar;
+    public Eksemplar(int AnEks, int streg) {
         this.antalEksemplar = AnEks;
-        this.stregkode= streg;
-
+        this.stregkode = streg;
     }
 
-    public int getUdgivelsesAar() {
-        return udgivelsesAar;
-    }
 
     public int getAntalEksemplar() {
         return antalEksemplar;
@@ -28,6 +20,8 @@ public class Eksemplar
     public int getStregkode() {
         return stregkode;
     }
+
+    // if ()
 
 
 }

@@ -1,4 +1,5 @@
-
+import java.time.format.DateTimeFormatter;
+import java.time.LocalDate;
 
 public class Main {
 
@@ -6,18 +7,39 @@ public class Main {
     public static void main(String[] args)
     {
 
+        //CREATE BIBLIOTEK
+        Bibliotek bibliotek1 = new Bibliotek("Nørrebro Bibliotek", "Københavns Komunne", "Jagtvej 13, 2200", "11223344");
+        System.out.println(bibliotek1);
 
+        //CREATE LOCAL TIME
+        LocalDate today = LocalDate.now();
 
-        Bibliotek bibliotek = new Bibliotek("Nørrebro Bibliotek", "Københavns Komunne", "Jagtvej 13, 2200", "11223344");
-        System.out.println(bibliotek);
-
-
+        //CREATE BOG
         Bog bog = new Bog();
         bog.addBookToAuthor();
 
 
-        Laaner laaner = new Laaner(1, "Thomas", 22113344, "Thomashansen@gmail.com");
-        
-        System.out.println(laaner);
+        //CREATE LAANER
+        Laaner laaner = new Laaner();
+        laaner.createLaaner();
+
+        Laaner selectedLaaner = laaner.getLaanerId(1);
+
+
+        DateTimeFormatter dateFormatter = DateTimeFormatter.ofPattern("dd-MM-yy");
+
+
+
+
+        Udlaan udlaan1 = new Udlaan(today, selectedLaaner, 10023, 3 );
+        System.out.println(udlaan1);
+
+
+
+
+
+
+        // eksmemplar--a
+
     }
 }

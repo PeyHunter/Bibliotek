@@ -12,8 +12,6 @@ public class Forfatter {
     public Forfatter() {}
 
 
-
-
     public Forfatter(String ffNavn, String forl, String nat, int fAar, int dAar) {
         this.forfatterNavn = ffNavn;
         this.forlag = forl;
