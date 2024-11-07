@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class Forfatter {
 
     private String      forfatterNavn;
@@ -8,6 +10,9 @@ public class Forfatter {
 
 
     public Forfatter() {}
+
+
+
 
     public Forfatter(String ffNavn, String forl, String nat, int fAar, int dAar) {
         this.forfatterNavn = ffNavn;
@@ -35,4 +40,16 @@ public class Forfatter {
         return doedsAar;
     }
 
+    @Override
+    public String toString() {
+
+        return
+                "- Navn: " + forfatterNavn + "\n" +
+                " - Forlag: " + forlag + "\n" +
+                " - Nationalitet: " + nationalitet + "\n" +
+                " - Foede Aar: " + foedeAar + "\n" +
+                " - Doeds Aar: " + doedsAar + "\n";
+
+
+    }
 }

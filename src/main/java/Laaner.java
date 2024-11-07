@@ -8,7 +8,7 @@ public class Laaner {
 
     public Laaner(){}
 
-    public Laaner(int lNr, int telNr, String lNavn, String eMail) {
+    public Laaner(int lNr, String lNavn, int telNr, String eMail) {
         this.laanerNr = lNr;
         this.telefonNr = telNr;
         this.laanerNavn = lNavn;
@@ -29,5 +29,15 @@ public class Laaner {
 
     public int getLaanerNr() {
         return laanerNr;
+    }
+
+    @Override
+    public String toString() {
+
+        return "Laaner\n" +
+                " - Laaner Nr:" + laanerNr + "\n" +
+                " - Laaner Navn " + laanerNavn + "\n" +
+                " - Telefon Nr: " + telefonNr + "\n" +
+                " - Email: " + email + "\n";
     }
 }

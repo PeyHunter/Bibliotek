@@ -16,6 +16,7 @@ public class Bibliotek {
         telefonNr = telNr;
     }
 
+
     public String getBibliotekNavn() {
         return bibliotekNavn;
     }

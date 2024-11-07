@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class Udlaan {
 
     private int     dato;
@@ -7,6 +9,8 @@ public class Udlaan {
 
 
     public Udlaan() {}
+
+    public ArrayList <Laaner> udlaanArray = new ArrayList<>();
 
     public Udlaan(int dat, int lID, int eksId, int udEks) {
         this.dato = dat;
