@@ -17,6 +17,11 @@ public class Bibliotek {
     }
 
 
+
+    //Facadeklase.
+        // write arraylisterne ud
+
+
     public String getBibliotekNavn() {
         return bibliotekNavn;
     }

@@ -1,27 +1,56 @@
-import java.util.ArrayList;
-import java.time.format.DateTimeFormatter;
-import java.time.LocalDate;
+
 
 public class Udlaan {
 
-    DateTimeFormatter   dateFormatter = DateTimeFormatter.ofPattern("dd-MM-yy");
+    private Laaner laaner;
+    private Eksemplar eksemplar;
+    private Dato udlaansDato;
 
-    private Laaner      laanerID;
-    private int         eksemplarId;
-    private int         udlaantEksemplar;
-    private LocalDate   dato;
 
-    public Udlaan() {}
-
-    public ArrayList<Udlaan> udlaansListe = new ArrayList<>();
-
-    public Udlaan(LocalDate dato, Laaner laanerID, int eksId, int udEks) {
-        this.dato = dato;
-        this.laanerID = laanerID;
-        this.eksemplarId = eksId;
-        this.udlaantEksemplar = udEks;
+    public Udlaan(Laaner l, Eksemplar e, Dato d) {
+        this.laaner = l;
+        this.eksemplar = e;
+        this.udlaansDato = d;
     }
 
+    public Laaner getLaaner() {
+        return laaner;
+    }
+
+    public Eksemplar getEksemplar(){
+        return eksemplar;
+    }
+
+    public Dato getUdlaansDato(){
+        return udlaansDato;
+    }
+
+
+//
+//    DateTimeFormatter   dateFormatter = DateTimeFormatter.ofPattern("dd-MM-yy");
+//
+//    private Laaner      laanerID;
+//    private int         eksemplarId;
+//    private int         udlaantEksemplar;
+//    private LocalDate   dato;
+//
+//    public Udlaan() {}
+//
+//    public ArrayList<Udlaan> udlaansListe = new ArrayList<>();
+//
+//
+
+//    public Udlaan createUdlaan() {
+//        udlaansListe.add();
+//    }
+
+
+
+//    public void updateEksemplarAntal() {
+//        if(laanerID== laanerNr ) {
+//            udlaantEksemplar--;
+//        }
+//    }
 
 
     // add to array - if (laanerID == laaner) udlaansListe++
@@ -38,31 +67,8 @@ public class Udlaan {
 //        return ;
 //    }
 
-    public Laaner getLaanerID() {
-        return laanerID;
-    }
 
-    public int getEksemplarId(){
-        return eksemplarId;
-    }
 
-    public int getUdlaantEksemplar(){
-        return udlaantEksemplar;
-    }
-
-    public LocalDate getDato() {
-        return dato;
-    }
-
-    @Override
-    public String toString() {
-        return"Udlaan: \n" +
-                "Dato: " + dato.format(dateFormatter) + "\n" +
-                "Laaner: " + laanerID +"\n" +
-                "Eksemplar" + eksemplarId + "\n" +
-                "Udlaant Eksemplar: " + udlaantEksemplar + "\n";
-
-    }
 
 
 

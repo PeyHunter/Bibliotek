@@ -1,27 +1,26 @@
 public class Eksemplar
 {
 
-    private int antalEksemplar;
-    private int stregkode;
+    private String stregKode;
+    private Bog bog;
 
     public Eksemplar() {
     }
 
-    public Eksemplar(int AnEks, int streg) {
-        this.antalEksemplar = AnEks;
-        this.stregkode = streg;
+    public Eksemplar(String s, Bog b) {
+        this.stregKode = s;
+        this.bog = b;
     }
 
 
-    public int getAntalEksemplar() {
-        return antalEksemplar;
+    public String getStregKode() {
+        return stregKode;
     }
 
-    public int getStregkode() {
-        return stregkode;
+    public Bog getBog() {
+        return bog;
     }
 
-    // if ()
 
 
 }
