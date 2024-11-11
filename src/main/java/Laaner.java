@@ -1,33 +1,39 @@
 import java.util.ArrayList;
 
-public class Laaner {
+public class Laaner
+{
 
-    public Laaner(){}
+    public Laaner()
+    {
+    }
 
-    private String  laanerNavn;
-    private String  email;
+    private String laanerNavn;
+    private String email;
     private CprNr cprNr;
 
-    public Laaner(String laanerNavn, String email, CprNr cprNr) {
+    public Laaner(String laanerNavn, String email, CprNr cprNr)
+    {
         this.laanerNavn = laanerNavn;
         this.email = email;
         this.cprNr = cprNr;
     }
 
-    public String getLaanerNavn() {
+    public String getLaanerNavn()
+    {
         return laanerNavn;
     }
 
-    public String getEmail() {
+    public String getEmail()
+    {
         return email;
     }
 
-    public CprNr getCprNr() {
+    public CprNr getCprNr()
+    {
         return cprNr;
     }
 
 }
-
 
 
 //

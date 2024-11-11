@@ -1,31 +1,37 @@
 
 
-public class Udlaan {
+public class Udlaan
+{
 
     private Laaner laaner;
     private Eksemplar eksemplar;
     private Dato udlaansDato;
 
 
-    public Udlaan(Laaner l, Eksemplar e, Dato d) {
+    public Udlaan(Laaner l, Eksemplar e, Dato d)
+    {
         this.laaner = l;
         this.eksemplar = e;
         this.udlaansDato = d;
     }
 
-    public Laaner getLaaner() {
+    public Laaner getLaaner()
+    {
         return laaner;
     }
 
-    public Eksemplar getEksemplar(){
+    public Eksemplar getEksemplar()
+    {
         return eksemplar;
     }
 
-    public Dato getUdlaansDato(){
+    public Dato getUdlaansDato()
+    {
         return udlaansDato;
     }
 
-    public Eksemplar getEksemplarId() {
+    public Eksemplar getEksemplarId()
+    {
         return eksemplar;
     }
 
@@ -49,7 +55,6 @@ public class Udlaan {
 //    }
 
 
-
 //    public void updateEksemplarAntal() {
 //        if(laanerID== laanerNr ) {
 //            udlaantEksemplar--;
@@ -70,10 +75,6 @@ public class Udlaan {
 //    public int getAntalUdlaan(){
 //        return ;
 //    }
-
-
-
-
 
 
 }
