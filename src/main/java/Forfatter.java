@@ -1,27 +1,35 @@
 import java.util.ArrayList;
 
-public class Forfatter {
+public class Forfatter
+{
 
-    private String      forfatterNavn;
-    private String      nationalitet;
-    private int         foedeAar;
+    private String forfatterNavn;
+    private String nationalitet;
+    private int foedeAar;
 
-    public Forfatter() {}
+    public Forfatter()
+    {
+    }
 
-    public Forfatter(String ffNavn, String nat, int fAar) {
+    public Forfatter(String ffNavn, String nat, int fAar)
+    {
         this.forfatterNavn = ffNavn;
         this.nationalitet = nat;
         this.foedeAar = fAar;
     }
 
-    public String getNavn() {
+    public String getNavn()
+    {
         return forfatterNavn;
     }
 
-    public String getNationalitet() {
+    public String getNationalitet()
+    {
         return nationalitet;
     }
-    public int getFoedeAar() {
+
+    public int getFoedeAar()
+    {
         return foedeAar;
     }
 

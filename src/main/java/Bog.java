@@ -1,26 +1,33 @@
-public class Bog {
+public class Bog
+{
 
-    private String      titel;
-    private String      genre;
-    private Forfatter   forfatter;
+    private String titel;
+    private String genre;
+    private Forfatter forfatter;
 
-    public Bog () {}
+    public Bog()
+    {
+    }
 
-    public Bog(String titel, String genre, Forfatter ffatter) {
+    public Bog(String titel, String genre, Forfatter ffatter)
+    {
         this.titel = titel;
         this.genre = genre;
         this.forfatter = ffatter;
     }
 
-    public String getTitel() {
+    public String getTitel()
+    {
         return titel;
     }
 
-    public String getGenre() {
+    public String getGenre()
+    {
         return genre;
     }
 
-    public Forfatter getForfatter() {
+    public Forfatter getForfatter()
+    {
         return forfatter;
     }
 

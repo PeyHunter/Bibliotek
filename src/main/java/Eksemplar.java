@@ -4,23 +4,26 @@ public class Eksemplar
     private String stregKode;
     private Bog bog;
 
-    public Eksemplar() {
+    public Eksemplar()
+    {
     }
 
-    public Eksemplar(String s, Bog b) {
+    public Eksemplar(String s, Bog b)
+    {
         this.stregKode = s;
         this.bog = b;
     }
 
 
-    public String getStregKode() {
+    public String getStregKode()
+    {
         return stregKode;
     }
 
-    public Bog getBog() {
+    public Bog getBog()
+    {
         return bog;
     }
-
 
 
 }
