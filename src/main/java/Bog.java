@@ -1,5 +1,3 @@
-import java.util.ArrayList;
-
 public class Bog {
 
     private String      titel;

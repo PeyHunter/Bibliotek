@@ -7,17 +7,25 @@ public class Main {
     public static void main(String[] args)
     {
 
-        public static void main() {
-            Forfatter mah = new Forfatter("Marting Hansen", "Dansk", 1909, 1955);
-            Bog loegnren = new Bog("Løgereren", mah, 1950);
+
+            Forfatter mah = new Forfatter("Marting Hansen", "Dansk", 1909);
+
+            Bog loegnren = new Bog("Løgereren", "Krimi", mah);
             Eksemplar l1 = new Eksemplar("123456", loegnren);
 
-            Laaner poul = new Laaner("Poul Thorsen", "Hirtshals", "gmail", new CprNr("9239");
-            Udlaan u1 = new Udlaan(poul, l1, new Dato(984389345));
 
-        System.out.println("Forfatter til udlån" + u1.getEksemplarId().getBog().getForfatter().getNavn());
+            Laaner poul = new Laaner("Poul Thorsen", "gmail", new CprNr("9239-3435"));
+            Udlaan udlaan = new Udlaan(poul, l1, new Dato(984389345));
+
+        System.out.println("Eksemplar: " + l1.getStregKode() + "\n" +
+                "Bog: " + loegnren.getTitel() + "\n" +
+                "Forfatter: " + mah.getNavn() +"\n" +
+                "Laaner: " + udlaan.getEksemplarId().getBog().getForfatter().getNavn() +
+                " (" + poul.getCprNr() + ")");
 
     }
+}
+
 
 
 
@@ -77,5 +85,3 @@ public class Main {
 //
 //        // eksmemplar--a
 
-    }
-}

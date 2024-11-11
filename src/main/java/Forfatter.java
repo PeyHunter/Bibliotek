@@ -14,7 +14,7 @@ public class Forfatter {
         this.foedeAar = fAar;
     }
 
-    public String getForfatterNavn() {
+    public String getNavn() {
         return forfatterNavn;
     }
 

@@ -80,5 +80,10 @@ public class CprNr
         return true;
     }
 
+    @Override
+    public String toString() {
+        return nummeret;
+    }
+
 
 }

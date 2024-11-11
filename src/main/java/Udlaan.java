@@ -25,6 +25,10 @@ public class Udlaan {
         return udlaansDato;
     }
 
+    public Eksemplar getEksemplarId() {
+        return eksemplar;
+    }
+
 
 //
 //    DateTimeFormatter   dateFormatter = DateTimeFormatter.ofPattern("dd-MM-yy");
