@@ -30,10 +30,7 @@ public class Udlaan
         return udlaansDato;
     }
 
-    public Eksemplar getEksemplarId()
-    {
-        return eksemplar;
-    }
+
 
 
 //

@@ -27,3 +27,6 @@ public class Eksemplar
 
 
 }
+
+//Hvis der er tale om arv skal man kunne beskrive klasserne ret bestemt.
+//Der er INTET der hedder multiple arv - det hedder interface. En klasse kan kun arve fra en klasse!

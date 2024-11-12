@@ -1,27 +1,22 @@
 import java.util.ArrayList;
 
-public class Laaner
+public class Laaner extends Person
 {
 
     public Laaner()
     {
     }
 
-    private String laanerNavn;
     private String email;
     private CprNr cprNr;
 
-    public Laaner(String laanerNavn, String email, CprNr cprNr)
+    public Laaner(String name, int age, String gender, String email, CprNr cprNr)
     {
-        this.laanerNavn = laanerNavn;
+        super(name, age, gender);
         this.email = email;
         this.cprNr = cprNr;
     }
 
-    public String getLaanerNavn()
-    {
-        return laanerNavn;
-    }
 
     public String getEmail()
     {

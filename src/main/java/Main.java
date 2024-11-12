@@ -9,25 +9,23 @@ public class Main
     {
 
 
-        Forfatter mah = new Forfatter("Marting Hansen", "Dansk", 1909);
+        Forfatter mah = new Forfatter("Martin Hansen", 52, "Mand", "Dansk",  1909);
 
         Bog loegnren = new Bog("Løgereren", "Krimi", mah);
 
         Eksemplar l1 = new Eksemplar("123456", loegnren);
 
-        Laaner poul = new Laaner("Poul Thorsen", "gmail", new CprNr("9239-3435"));
+        Laaner poul = new Laaner("Poul Thorsen", 52, "Mand", "poul@gmail", new CprNr("928939-3435"));
 
         Udlaan udlaan = new Udlaan(poul, l1, new Dato(984389345));
 
 
 
-
-        System.out.println("Eksemplar: " + l1.getStregKode() + "\n" +
+        System.out.println(
+                "Eksemplar: " + l1.getStregKode() + "\n" +
                 "Bog: " + loegnren.getTitel() + "\n" +
-                "Forfatter: " + mah.getNavn() + "\n" +
-                "Laaner: " + udlaan.getEksemplarId().getBog().getForfatter().getNavn() +
-                " (" + poul.getCprNr() + ")");
-
+                "Forfatter: " + mah.getName() + "\n" +
+                "Laaner: " + udlaan.getLaaner().getName()  +  " (" + poul.getCprNr() + ")");
     }
 }
 

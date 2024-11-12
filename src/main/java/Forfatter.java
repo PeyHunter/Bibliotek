@@ -1,9 +1,11 @@
 import java.util.ArrayList;
 
-public class Forfatter
+public class Forfatter extends Person
 {
 
-    private String forfatterNavn;
+
+
+
     private String nationalitet;
     private int foedeAar;
 
@@ -11,16 +13,11 @@ public class Forfatter
     {
     }
 
-    public Forfatter(String ffNavn, String nat, int fAar)
+    public Forfatter(String name, int age, String gender, String nat, int fAar)
     {
-        this.forfatterNavn = ffNavn;
+       super(name, age, gender);
         this.nationalitet = nat;
         this.foedeAar = fAar;
-    }
-
-    public String getNavn()
-    {
-        return forfatterNavn;
     }
 
     public String getNationalitet()
