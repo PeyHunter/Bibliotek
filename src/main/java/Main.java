@@ -20,6 +20,8 @@ public class Main
         Udlaan udlaan = new Udlaan(poul, l1, new Dato(984389345));
 
 
+
+
         System.out.println("Eksemplar: " + l1.getStregKode() + "\n" +
                 "Bog: " + loegnren.getTitel() + "\n" +
                 "Forfatter: " + mah.getNavn() + "\n" +

@@ -20,10 +20,8 @@ public class Bibliotek
         telefonNr = telNr;
     }
 
-
     //Facadeklase.
     // write arraylisterne ud
-
 
     public String getBibliotekNavn()
     {
